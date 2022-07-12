@@ -60,7 +60,7 @@ peers="4e2441c0a4663141bb6b2d0ea4bc3284171994b6@46.38.241.169:26656,79ffbd983ab6
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.stafihub/config/config.toml
 ```
 
-# Indexer'i İnaktif Etme
+## Indexer'i İnaktif Etme
 * Pruning disk kullanımını düşürür.
 ```shell
 indexer="null"
@@ -128,7 +128,7 @@ Test token almak için Discord'da [#faucet](https://discord.gg/a6CMqMh47e) kanal
 ```
 
 ## Senkronizasyonu Kontrol Etme
-`false` çıktısı almaldıkça bir sonraki adıma vani validator oluşturma adımına geçmiyoruz.
+`false` çıktısı almaldıkça bir sonraki adıma yani validator oluşturma adımına geçmiyoruz.
 ```shell
 palomad status 2>&1 | jq .SyncInfo
 ```
