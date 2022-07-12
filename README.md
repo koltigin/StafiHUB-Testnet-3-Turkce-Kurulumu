@@ -127,6 +127,12 @@ Test token almak için Discord'da [#faucet](https://discord.gg/a6CMqMh47e) kanal
 !faucet send CUZDAN_ADRESINIZ
 ```
 
+## Senkronizasyonu Kontrol Etme
+`false` çıktısı almaldıkça bir sonraki adıma vani validator oluşturma adımına geçmiyoruz.
+```shell
+palomad status 2>&1 | jq .SyncInfo
+```
+
 ## Validator Oluşturma
 * Aşağıdaki komutta `NODE_AINIZ` ve `CUZDAN_ADINIZ` bölümlerini değiştiriyoruz.
 ```shell
