@@ -118,7 +118,7 @@ journalctl -u stafihubd -f
 ```shell
 stafihubd keys add CUZDAN_ADINIZ --keyring-backend file
 ```
-###Var Olan Cüzdanı İçeri Aktarma
+### Var Olan Cüzdanı İçeri Aktarma
 stafihubd keys add CUZDAN_ADINIZ --recover
 
 ## Faucet / Musluk
