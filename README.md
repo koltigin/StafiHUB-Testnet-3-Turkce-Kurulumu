@@ -130,7 +130,7 @@ Test token almak için Discord'da [#faucet](https://discord.gg/a6CMqMh47e) kanal
 ## Senkronizasyonu Kontrol Etme
 `false` çıktısı almaldıkça bir sonraki adıma yani validator oluşturma adımına geçmiyoruz.
 ```shell
-palomad status 2>&1 | jq .SyncInfo
+stafihubd status 2>&1 | jq .SyncInfo
 ```
 
 ## Validator Oluşturma
