@@ -134,9 +134,9 @@ stafihubd status 2>&1 | jq .SyncInfo
 ```
 
 ## Validator Oluşturma
-* Aşağıdaki komutta `NODE_AINIZ` ve `CUZDAN_ADINIZ` bölümlerini değiştiriyoruz.
+* Aşağıdaki komutta `NODE_ADINIZ` ve `CUZDAN_ADINIZ` bölümlerini değiştiriyoruz.
 ```shell
-stafihubd tx staking create-validator -y --amount=1000000ufis --pubkey=$(stafihubd tendermint show-validator) --moniker=YOUR_NODE_NAME --commission-rate=0.10 --commission-max-rate=0.20 --commission-max-change-rate=0.01 --min-self-delegation=1 --from=YOUR_WALLET_NAME --chain-id=stafihub-public-testnet-3 --gas-prices=0.025ufis --keyring-backend file
+stafihubd tx staking create-validator -y --amount=1000000ufis --pubkey=$(stafihubd tendermint show-validator) --moniker=NODE_ADINIZ --commission-rate=0.10 --commission-max-rate=0.20 --commission-max-change-rate=0.01 --min-self-delegation=1 --from=CUZDAN_ADINIZ --chain-id=stafihub-public-testnet-3 --gas-prices=0.025ufis --keyring-backend file
 ```
 
 ## Explorer
